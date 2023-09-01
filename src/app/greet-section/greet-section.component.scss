@@ -115,13 +115,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+
 }
 
 .arrow{
   position: absolute;
-  bottom: 22%;
+  bottom: 23%;
   transition: transform 0.3s ease-in-out;
   &:hover{
     transform: translateY(5px);
+    
   }
 }
