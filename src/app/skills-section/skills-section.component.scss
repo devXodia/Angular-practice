@@ -20,10 +20,12 @@
 
   .skills {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
     margin-top: 260px;
-    width: 56%;
+    max-width: 900px;
+    min-width: 820px;
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 120px;
