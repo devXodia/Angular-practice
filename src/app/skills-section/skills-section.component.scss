@@ -1,15 +1,68 @@
-.container{
-    height: 100vh;
-    width: 100%;
-    background-color: #131111;
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #131111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+
+  h2 {
+    margin-top: unset;
+    padding-top: 86px;
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 260px;
+    width: 56%;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 120px;
+  }
+
+  .skill-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(255,255,255, 0.98);
+    position: relative;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-size: 18px;
+  }
+
+  .logo-container {
     display: flex;
     justify-content: center;
-    
-    h2{
-        margin-top: unset;
-        padding-top: 86px;
-        color: white;
-        font-weight: 500;
-        font-size: 36px;
-    }
+    align-items: center;
+    position: absolute;
+    top: -15%;
+    left: 37%;
+    width: 23%;
+    height: 60px;
+  }
+  img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+  }
+  svg {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    fill: white;
+    filter: drop-shadow(0px 4px 4px rgba(197, 197, 197, 0.25));
+  }
 }

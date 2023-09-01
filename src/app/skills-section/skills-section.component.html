@@ -1,3 +1,21 @@
 <div class="container">
-    <h2>My Skills</h2>
+  <h2>My Skills</h2>
+  <div class="skills">
+    <div *ngFor="let skill of skillList" class="skill-container">
+      <div class="logo-container">
+        <svg
+          class="circle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="54"
+          height="54"
+          viewBox="0 0 54 54"
+          fill="none"
+        >
+          <circle cx="27" cy="27" r="26.5" stroke="white" />
+        </svg>
+        <img src="{{ skill.logo }}" />
+      </div>
+      <span>{{ skill.nameOfSkill }}</span>
+    </div>
+  </div>
 </div>
