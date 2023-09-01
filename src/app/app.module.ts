@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { GreetSectionComponent } from './greet-section/greet-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
+import { WorkSectionComponent } from './work-section/work-section.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
     HeaderComponent,
     GreetSectionComponent,
     SkillsSectionComponent,
+    WorkSectionComponent,
   ],
   imports: [
     BrowserModule,
