@@ -1,14 +1,58 @@
 <div class="container">
-<h2>My Work</h2>
-<div class="buttons-container">
-    <button>All</button>
-    <button>Angular</button>
-    <button>Java Script</button>
-</div>
-<div class="projects-container">
-    <div class="project" id="1"></div>
-    <div class="project" id="2"></div>
-    <div class="project" id="3"></div>
-    <div class="project" id="4"></div>
-</div>
+  <h2>My Work</h2>
+  <div class="buttons-container">
+    <button (click)="showAll()">All</button>
+    <button (click)="showAngular()">Angular</button>
+    <button (click)="showJavaScript()">JavaScript</button>
+  </div>
+  <div class="projects-container">
+    <div
+      class="project"
+      id="pollo_loco"
+      #pollo
+      *ngIf="currentButton === 'All' || currentButton === 'JavaScript'"
+    >
+      <div class="inner_container">
+        <h3>El Pollo Loco</h3>
+        <span>JavaScript -based Jump and Run Game.</span>
+        <a href="#">Try Out</a>
+      </div>
+    </div>
+    <div
+      class="project"
+      id="join"
+      #join
+      *ngIf="currentButton === 'All' || currentButton === 'JavaScript'"
+    >
+      <div class="inner_container">
+        <h3>Join</h3>
+        <span>Project Management System - Kanban Board.</span>
+        <a href="#">Try Out</a>
+      </div>
+    </div>
+    <div
+      class="project"
+      id="laptop1"
+      #random1
+      *ngIf="currentButton === 'All' || currentButton === 'Angular'"
+    >
+      <div class="inner_container">
+        <h3>El Pollo Loco</h3>
+        <span>JavaScript -based Jump and Run Game.</span>
+        <a href="#">Try Out</a>
+      </div>
+    </div>
+    <div
+      class="project"
+      id="laptop2"
+      #random2
+      *ngIf="currentButton === 'All' || currentButton === 'Angular'"
+    >
+      <div class="inner_container">
+        <h3>El Pollo Loco</h3>
+        <span>JavaScript -based Jump and Run Game.</span>
+        <a href="#">Try Out</a>
+      </div>
+    </div>
+  </div>
 </div>
