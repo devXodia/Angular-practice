@@ -10,7 +10,7 @@ export class SkillsSectionComponent {
 
  skillList = [
   {
-    nameOfSkill: 'Java script',
+    nameOfSkill: 'JavaScript',
     logo: `${this.baseUrl}/javascript.png`
   },
   {

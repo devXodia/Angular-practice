@@ -3,10 +3,11 @@
   flex-direction: column;
 
   height: 100vh;
-  max-width: 100%;
+  width: 100%;
   background-color: #131111;
   padding-left: 120px;
   padding-right: 120px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -119,4 +120,19 @@
     position: absolute;
     
   }
+}
+
+@media screen and (min-width: 2440px) {
+  .container {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
 }

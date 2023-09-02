@@ -7,6 +7,7 @@
   align-items: center;
   position: relative;
   flex-direction: column;
+  box-sizing: border-box;
 
   h2 {
     color: white;
@@ -51,9 +52,8 @@
   align-items: center;
   width:100%;
   height: 60%;
-  padding-left: 120px;
-  padding-right: 120px;
   box-sizing: border-box;
+  gap: 83px;
 }
 
 .project {
@@ -61,8 +61,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 50%;
+  width: 46%;
+  height: 44%;
 }
 
 .inner_container {
@@ -142,4 +142,19 @@
   background-image: url("../../assets/img/project_pictures/laptop.jpg");
   background-position: center;
   background-size: cover;
+}
+
+@media screen and (min-width: 2440px) {
+  .container {
+    padding-left: 500px;
+    padding-right: 500px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
 }
