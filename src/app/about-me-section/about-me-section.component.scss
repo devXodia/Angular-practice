@@ -1,65 +1,122 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    
-    height: 100vh;
-    max-width: 100%;
-    background-color: #131111;
-    padding-left: 120px;
-    padding-right: 120px;
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  max-width: 100%;
+  background-color: #131111;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
-.header{
-    padding-top: 86px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-    width: 100%;
-    height: 30%;
-    color: white;
+.header {
+  padding-top: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  width: 100%;
+  height: 30%;
+  color: white;
 }
 
 .picture-container {
-    width: 276px;
-    height: 267px;
-    flex-shrink: 0;
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 276px;
+  height: 267px;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .background-container {
-    background-color: #fa2759;
+.background-container {
+  background-color: #fa2759;
+  width: 100%;
+  height: 100%;
+  border-radius: 227px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  img {
+    position: relative;
+    bottom: -47px;
+    height: 316px;
     width: 100%;
-    height: 100%;
-    border-radius: 227px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    overflow: hidden;
-    img {
-      position: relative;
-      width: 550px;
-      height: 300px;
-      object-fit: fill;
-    }
+    object-fit: cover;
   }
+}
 
-  .about-me-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-family: 'Inter';
-    h3{
-        font-weight: 700;
-        font-size: 36px;
-    }
-    span{
-        font-weight: 400;
-        font-size: 18px;
-    }
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Inter";
+  h3 {
+    font-weight: 700;
+    font-size: 36px;
   }
+  span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    
+  }
+}
+
+.divider {
+  margin-top: 50px;
+}
+
+.cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66px;
+  width: 100%;
+  height: 40%;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 30px;
+ 
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25%;
+  text-align: center;
+  color: white;
+  height: 100%;
+  p{
+    
+  }
+  h4{
+    
+  }
+}
+
+.img_container{
+  
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    position: relative;
+    
+  }
+  img{
+    position: absolute;
+    
+  }
+}
