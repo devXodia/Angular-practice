@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { GreetSectionComponent } from './greet-section/greet-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
+import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { WorkSectionComponent } from './work-section/work-section.component';
     GreetSectionComponent,
     SkillsSectionComponent,
     WorkSectionComponent,
+    AboutMeSectionComponent,
   ],
   imports: [
     BrowserModule,
