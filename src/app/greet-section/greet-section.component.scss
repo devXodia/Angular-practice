@@ -1,5 +1,5 @@
 .container {
-  width:100%;
+  width: 100%;
   height: calc(100vh - 86px);
   margin-top: 86px;
   background-color: #000;
@@ -39,16 +39,22 @@
   background-color: #000;
   border-style: unset;
   font-family: "Inter";
+  display: flex;
+  align-items: center;
   span {
     text-align: center;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     color: #2dfcd8;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   svg {
     width: 200px;
-    height: 100%;
+    height: 60px;
     left: 0;
     top: 0;
     position: absolute;
@@ -143,5 +149,108 @@
     padding-left: 120px;
     padding-right: 120px;
   }
+}
+@media screen and (max-width: 1250px){
+  .greet-container{
+    width: 631px;
+  }
   
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .greet-container{
+    span{
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .greet-container{
+    span{
+      width: 452px;
+    }
+  }
+  .picture-container{
+    width: 321px !important;
+    height: 310px !important;
+    img{
+      width: 552px !important;
+    height: 324px !important;
+    }
+  }
+
+  .greet-container{
+    span{
+      width: 318px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .picture-container{
+    width: 321px !important;
+    height: 310px !important;
+    img{
+      width: 552px !important;
+    height: 324px !important;
+    }
+  }
+
+  .greet-container{
+    span{
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .container{
+    flex-direction: column;
+    line-height: 45px;
+    align-items: center;
+  }
+  .greet-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    order: 2;
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+    font-size: 32px;
+    span{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .picture-container{
+    padding-top: 40px;
+  }
+  .button_container{
+    width: 80%;
+  }
+  .btn{
+    width: 100%;
+    svg{
+      width: 100%;
+  }
+    rect{
+      width: 100%;
+    }
+  }
+  .arrow-container{
+    display: none;
+  }
 }

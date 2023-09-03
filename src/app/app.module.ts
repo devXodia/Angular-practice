@@ -8,7 +8,10 @@ import { GreetSectionComponent } from './greet-section/greet-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
-
+import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,10 +21,14 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
     SkillsSectionComponent,
     WorkSectionComponent,
     AboutMeSectionComponent,
+    ContactSectionComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -37,8 +37,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    min-width: 30%;
-    min-height: 200px;
+    min-width: 23%; 
+    min-height: 165px;
     background-color: rgba(255,255,255, 0.98);
     position: relative;
     border-radius: 6px;
@@ -83,5 +83,92 @@
     padding-left: 120px;
     padding-right: 120px;
   }
-  
+  .skill-container{
+    min-width: 23% !important;
+    min-height: 165px !important;
+  } 
+
 }
+
+@media screen and (max-width: 1200px){
+  .logo-container{
+    img{
+      width: 25px;
+    height: 25px;
+}
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skill-container{
+    min-width: 28% !important;
+    min-height: 146px !important;
+  }
+  .logo-container{
+    img{
+      width: 30px;
+    height: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 746px){
+  .skill-container{
+    min-height: 86px !important;
+  }
+  .logo-container{
+    top: -28% !important;
+    img{
+      width: 25px;
+    height: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .skill-container{
+    min-width: 42% !important;
+    min-height: 76px !important;
+  }
+  .logo-container{
+    top: -40% !important;
+    img{
+      width: 25px;
+    height: 25px;
+}
+    }
+  }
+
+  @media screen and (max-width: 407px){
+    .skills{
+      height: 100vh;
+      margin-top: 176px !important;
+    }
+    .skill-container{
+      min-width: 39% !important;
+    min-height: 23px !important;
+    }
+    .logo-container{
+      top: -26% !important;
+    }
+    .container{
+      h2{
+        padding-top: 23px;
+      }
+    }
+    
+  }
+
+  @media screen and (max-width: 379px){
+    .skill-container{
+      min-width: 36% !important;
+    }
+  }
+

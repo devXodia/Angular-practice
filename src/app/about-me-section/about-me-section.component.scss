@@ -136,3 +136,51 @@
   }
   
 }
+
+@media screen and (max-width: 1024px) {
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .card{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .card{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .container{
+    height: unset;
+  }
+  .divider {
+    display: none;
+  }
+  .header{
+    flex-wrap: wrap;
+    height: 85vh;
+  }
+  .about-me-text{
+    height: unset;
+    margin-top: -182px;
+    h3{
+      margin-top: unset;
+    }
+  }
+  .cards-container{
+    flex-direction: column;
+  }
+  .card{
+    width: 66%;
+    h4{
+      font-size: 18px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+}
